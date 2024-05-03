@@ -1,11 +1,11 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-// Function to check if the given year is a leap year
+// Checking Leap Year
 bool isLeapYear(int year) {
     return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
-// Function to get the number of days in a month
+//  number of days in a month
 int getDaysInMonth(int month, int year) {
     if (month == 2)
     {
@@ -20,7 +20,7 @@ int getDaysInMonth(int month, int year) {
         return 31;
     }
 }
-// Function to print the calendar of a given year
+//  print the calendar of a given year
 void printCalendar(int year) {
     cout << "Calendar for year " << year << ":" << endl;
     cout << "==============================" << endl;
